@@ -24,3 +24,14 @@ vim.opt.hlsearch = false -- do not highlight matches
 vim.opt.ignorecase = true -- ignore case in searches by default
 vim.opt.smartcase = true -- but make it case sensitive if an uppercase is entered
 
+--python3
+vim.g.loaded_python3_provider = 0
+
+--ruby
+vim.g.loaded_ruby_provider = 0
+
+--node.js
+vim.g.loaded_node_provider = 0
+
+--perl
+vim.g.loaded_perl_provider = 0
