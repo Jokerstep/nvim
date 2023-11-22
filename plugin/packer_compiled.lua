@@ -116,8 +116,13 @@ _G.packer_plugins = {
     path = "C:\\Users\\joker\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\joker\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
+  },
   ["nvim-cmp"] = {
-    after = { "cmp-buffer", "cmp-path", "cmp-nvim-lsp", "cmp-cmdline" },
+    after = { "cmp-path", "cmp-buffer", "cmp-cmdline", "cmp-nvim-lsp" },
     config = { "require('config.nvim-cmp')" },
     loaded = true,
     only_config = true,
@@ -133,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\joker\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\joker\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   }
 }
 
@@ -148,10 +148,10 @@ require('config.nvim-cmp')
 time([[Config for nvim-cmp]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
-vim.cmd [[ packadd cmp-nvim-lsp ]]
 vim.cmd [[ packadd cmp-cmdline ]]
-vim.cmd [[ packadd cmp-path ]]
 vim.cmd [[ packadd cmp-buffer ]]
+vim.cmd [[ packadd cmp-nvim-lsp ]]
+vim.cmd [[ packadd cmp-path ]]
 time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
