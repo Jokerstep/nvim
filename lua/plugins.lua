@@ -42,9 +42,14 @@ return require('packer').startup(function(use)
         use { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' } -- cmdline auto-completion
         use 'L3MON4D3/LuaSnip'
         use 'saadparwaiz1/cmp_luasnip'
+<<<<<<< HEAD
         use 'EdenEast/nightfox.nvim'
         --use 'folke/tokyonight.nvim'
         --use 'tanvirtin/monokai.nvim'
+=======
+        -- use 'folke/tokyonight.nvim'
+        use 'tanvirtin/monokai.nvim'
+>>>>>>> origin/main
         ---------------------------------------
         -- NOTE: PUT YOUR THIRD PLUGIN HERE --
         ---------------------------------------
