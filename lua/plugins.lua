@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
         use 'L3MON4D3/LuaSnip'
         use 'saadparwaiz1/cmp_luasnip'
         use 'EdenEast/nightfox.nvim'
+        use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' , } , tag = 'nightly' }
         --use 'folke/tokyonight.nvim'
         --use 'tanvirtin/monokai.nvim'
         ---------------------------------------
